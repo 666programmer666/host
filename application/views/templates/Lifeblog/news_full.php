@@ -69,11 +69,26 @@
 
     
     <br>
+
+
+
     <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group mr-2" role="group" aria-label="First group">
         <button type="button" class="btn indigo lighten-2"><i class="fa fa-star" aria-hidden="true"></i></button>
         <button type="button" class="btn blue lighten-2"><i class="fa fa-heart" aria-hidden="true"></i></button>
         <button type="button" class="btn light-blue lighten-2"><i class="fa fa-user" aria-hidden="true"></i></button>
         <button type="button" class="btn cyan lighten-2"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="btn-group mr-2" role="group" aria-label="First group">
+        <?php echo form_open('/posts/delete/' . $post['id']); ?>
+            <button type="submit" class="btn btn-danger lighten-2"><i class="fa fa-delete" aria-hidden="true">Delete</i></button>
+        </form>
+        <?php echo form_open('/posts/edit/' . $post['slug']); ?>
+            <button type="submit" class="btn btn-light-green lighten-2"><i class="fa fa-delete" aria-hidden="true">Edit</i></button>
+        </form>
+
+        
+        
     </div>
 </div>

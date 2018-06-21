@@ -48,15 +48,57 @@ class Posts extends CI_Controller
   {
     $data['title'] = 'Create Post';
 
+    $this->form_validation->set_rules('title', 'Title', 'required');
+    $this->form_validation->set_rules('body', 'News Text', 'required');
+
+    if ($this->form_validation->run() === false) {
+
+      $this->load->view('templates/Lifeblog/header', $data);
+      $this->load->view('templates/Lifeblog/topmenu');
+      $this->load->view('templates/Lifeblog/slider');
+      $this->load->view('templates/Lifeblog/post_create', $data);
+      $this->load->view('templates/LifeBlog/auth_modal');
+      $this->load->view('templates/Lifeblog/footer');
+      $this->load->view('templates/Lifeblog/end_footer');
+    } else {
+      
+      $this->posts_model->create_post();
+      redirect('posts');
+      
+    }
+  
+  }
+
+  public function delete($id)
+  {
+    $this->posts_model->delete_post($id);
+    redirect('posts');
+    
+  }
+
+  public function edit($slug)
+  {
+    $data['post'] = $this->posts_model->get_posts($slug);
+
+    if (empty($data['post'])) {
+      show_404();
+    }
+
+    $data['title'] = 'Edit post';
+
     $this->load->view('templates/Lifeblog/header', $data);
     $this->load->view('templates/Lifeblog/topmenu');
-    $this->load->view('templates/Lifeblog/slider');
-    $this->load->view('templates/Lifeblog/post_create', $data);
+    $this->load->view('posts/edit', $data);
     $this->load->view('templates/LifeBlog/auth_modal');
     $this->load->view('templates/Lifeblog/footer');
     $this->load->view('templates/Lifeblog/end_footer');
 
+  }
 
+  public function update()
+  {
+    $this->posts_model->update_post();
+    redirect('posts');
   }
 
 }

@@ -43,8 +43,9 @@
                                   <i class="fa fa-user"></i>
                               </a>
                               <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item waves-effect waves-light" href="#">Профиль</a>
-                                  <a class="dropdown-item waves-effect waves-light" href="#">Выход</a>
+                                  <a class="dropdown-item waves-effect waves-light" href="/posts/create">Создать новость</a>
+                                  <a class="dropdown-item waves-effect waves-light" href="/profile">Профиль</a>
+                                  <a class="dropdown-item waves-effect waves-light" href="/logout">Выход</a>
                               </div>
                           </li>
                       </ul>

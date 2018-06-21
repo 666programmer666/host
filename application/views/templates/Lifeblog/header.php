@@ -7,8 +7,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $title; ?></title>
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/Lifeblog/font/fontawesome/css/font-awesome.css">
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/Lifeblog/css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -16,8 +14,11 @@
 
     <!-- Your custom styles (optional) -->
     <link href="<?php echo base_url(); ?>assets/Lifeblog/css/style.css" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/Lifeblog/font/fontawesome/css/font-awesome.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/Lifeblog/font/fontawesome/css/font-awesome.css">
+    
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/Lifeblog/css/jodit.min.css">
+
 </head>
 
 <body>
