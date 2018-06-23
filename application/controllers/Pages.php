@@ -17,7 +17,6 @@ class Pages extends CI_Controller
 
     $this->load->view('templates/Lifeblog/header', $data);
     $this->load->view('templates/Lifeblog/topmenu');
-    $this->load->view('templates/Lifeblog/slider');
     $this->load->view('pages/'.$page, $data);
     $this->load->view('templates/LifeBlog/auth_modal');
     $this->load->view('templates/Lifeblog/footer');

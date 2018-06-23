@@ -20,9 +20,9 @@
         <h3 class="mb-3 font-weight-bold dark-grey-text">
             <strong><?php echo $post['title']; ?></strong>
         </h3>
-        <p class="grey-text"><?php echo $post['prenews']; ?></p>
+        <p class="grey-text"><?php echo word_limiter($post['prenews'], 50); ?></p>
         <p>Posted by
-            <a class="font-weight-bold dark-grey-text">Jessica Clark</a>, at <?php echo $post['created_at']; ?></p>
+            <a class="font-weight-bold dark-grey-text">Jessica Clark</a>, at <?php echo $post['created_at']; ?> in <strong><?php echo $post['name'];?></strong> </p>
         <a class="btn btn-primary btn-md" href="<?php echo site_url('/posts/'.$post['slug']); ?>">Read more</a>
     </div>
     <!--Grid column-->

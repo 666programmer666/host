@@ -17,6 +17,19 @@
                 <input type="text" class="form-control" placeholder="Title News" name="title" value="<?php echo $post['title']; ?>">
                 <label for="title">Title</label>
             </div>
+
+            <!-- Material input -->
+            <div class="md-form form-group">
+
+                <select name="category_id" id="" class="mdb-select colorful-select dropdown-primary">
+                <option value="" disabled selected>Choose your category</option>
+                <?php foreach($categories as $category): ?>
+                    
+                    <option value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
+                <?php endforeach; ?>
+
+                </select>
+            </div>
         </div>
         <!-- Grid column -->
     </div>

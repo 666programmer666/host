@@ -17,7 +17,6 @@ class Posts extends CI_Controller
 
     $this->load->view('templates/Lifeblog/header', $data);
     $this->load->view('templates/Lifeblog/topmenu');
-    $this->load->view('templates/Lifeblog/slider');
     $this->load->view('posts/index', $data);
     $this->load->view('templates/LifeBlog/auth_modal');
     $this->load->view('templates/Lifeblog/footer');
@@ -48,6 +47,8 @@ class Posts extends CI_Controller
   {
     $data['title'] = 'Create Post';
 
+    $data['categories'] = $this->posts_model->get_categories();
+
     $this->form_validation->set_rules('title', 'Title', 'required');
     $this->form_validation->set_rules('body', 'News Text', 'required');
 
@@ -55,7 +56,6 @@ class Posts extends CI_Controller
 
       $this->load->view('templates/Lifeblog/header', $data);
       $this->load->view('templates/Lifeblog/topmenu');
-      $this->load->view('templates/Lifeblog/slider');
       $this->load->view('templates/Lifeblog/post_create', $data);
       $this->load->view('templates/LifeBlog/auth_modal');
       $this->load->view('templates/Lifeblog/footer');
@@ -79,6 +79,8 @@ class Posts extends CI_Controller
   public function edit($slug)
   {
     $data['post'] = $this->posts_model->get_posts($slug);
+
+    $data['categories'] = $this->posts_model->get_categories();
 
     if (empty($data['post'])) {
       show_404();

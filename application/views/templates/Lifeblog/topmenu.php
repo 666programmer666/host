@@ -5,10 +5,8 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
                       <ul class="navbar-nav mr-auto">
-                          <li class="nav-item active">
-                              <a class="nav-link waves-effect waves-light" href="/">Главная
-                                  <span class="sr-only">(current)</span>
-                              </a>
+                          <li class="nav-item">
+                              <a class="nav-link waves-effect waves-light" href="/">Главная</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link waves-effect waves-light" href="#">Услуги</a>
@@ -53,3 +51,5 @@
               </nav>
 
               <div class="container">
+              <div class="divider-new"><p id="icon" style="text-shadow: rgb(179, 179, 179) 0px 0px 0px, rgb(198, 198, 198) 1px 1px 0px, rgb(217, 217, 217) 2px 2px 0px, rgb(236, 236, 236) 3px 3px 0px; font-size: 20px; color: rgb(255, 255, 255); height: 30px; width: 30px; line-height: 30px; border-radius: ; text-align: center; background-color: rgb(255, 255, 255);"> LB </p> 
+              </div>
