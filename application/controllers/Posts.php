@@ -61,8 +61,23 @@ class Posts extends CI_Controller
       $this->load->view('templates/Lifeblog/footer');
       $this->load->view('templates/Lifeblog/end_footer');
     } else {
+      $config['upload_path'] = './assets/images/posts';  
+      $config['allowed_types'] = 'gif|png|jpg';  
+      $config['max_size'] = '2048';  
+      $config['max_width'] = '500';  
+      $config['max_height'] = '500';
+      
+      $this->load->library('upload', $config);
+      if (!$this->upload->do_upload()) {
+        $errors = array('error' => $this->upload->display_errors());
+        $post_image = 'noimages.jpg';
+      } else {
+        $data = array('upload_data' => $this->upload->data());
+        $post_image = $_FILES['userfile']['name'];
+      }
+      
 
-      $this->posts_model->create_post();
+      $this->posts_model->create_post($post_image);
       redirect('posts');
 
     }
