@@ -1,47 +1,40 @@
+-- Adminer 4.6.2 MySQL dump
 
-CREATE DATABASE blog;
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
-USE blog;
+CREATE DATABASE `blog` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `blog`;
 
-CREATE TABLE posts (
-  id int(11) NOT NULL AUTO_INCREMENT,
-  category_id int(11) NOT NULL,
-  title varchar(128) NOT NULL,
-  prenews text NOT NULL,
-  body text NOT NULL,
-  slug varchar(128) NOT NULL,
-  created_at datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
-)
-ENGINE = INNODB,
-AUTO_INCREMENT = 33,
-AVG_ROW_LENGTH = 2340,
-CHARACTER SET utf8,
-COLLATE utf8_general_ci;
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-ALTER TABLE posts
-ADD INDEX slug (slug);
+INSERT INTO `categories` (`id`, `name`, `created_at`) VALUES
+(1,	'Business',	'2018-06-22 05:28:58'),
+(2,	'Technology',	'2018-06-22 05:29:30');
 
-CREATE TABLE categories (
-  id int(11) NOT NULL AUTO_INCREMENT,
-  name varchar(255) NOT NULL,
-  created_at timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
-)
-ENGINE = INNODB,
-AUTO_INCREMENT = 3,
-AVG_ROW_LENGTH = 8192,
-CHARACTER SET utf8,
-COLLATE utf8_general_ci;
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category_id` int(11) NOT NULL,
+  `title` varchar(128) NOT NULL,
+  `prenews` text NOT NULL,
+  `body` text NOT NULL,
+  `slug` varchar(128) NOT NULL,
+  `created_at` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `post_image` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `slug` (`slug`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO posts VALUES
+INSERT INTO `posts` (`id`, `category_id`, `title`, `prenews`, `body`, `slug`, `created_at`, `post_image`) VALUES
+(25,	0,	'test',	'',	'test',	'test',	'0000-00-00 00:00:00',	''),
+(26,	1,	'title',	'',	'test4',	'title',	'0000-00-00 00:00:00',	''),
+(40,	1,	'123',	'',	'00',	'123',	'0000-00-00 00:00:00',	'orden.jpg');
 
-(28, 2, 'test news 2', '', 'test news 2<br>', 'test-news-2', '0000-00-00 00:00:00'),
-(29, 1, 'Open test', '', 'Open test <br>', 'Open-test', '0000-00-00 00:00:00'),
-(30, 1, 'Close test', '', 'Close test<br>', 'Close-test', '2018-06-23 15:24:49'),
-
-
-INSERT INTO categories VALUES
-(1, 'Business', '2018-06-22 08:28:58'),
-(2, 'Technology', '2018-06-22 08:29:30');
-
+-- 2018-07-10 13:44:56
