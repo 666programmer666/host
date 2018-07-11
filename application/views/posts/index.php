@@ -7,7 +7,7 @@
     <div class="col-lg-5 col-xl-4 mb-4">
         <!--Featured image-->
         <div class="view overlay rounded z-depth-1-half">
-            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="First sample image">
+            <img src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>" class="img-fluid" alt="First sample image">
             <a>
                 <div class="mask rgba-white-slight"></div>
             </a>
