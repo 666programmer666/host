@@ -7,12 +7,12 @@
             <!--Featured image-->
             <div class="card card-cascade wider reverse">
                 <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="Wide sample post image" class="img-fluid">
+                    <img src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>" alt="Wide sample post image" class="img-fluid">
                     <a>
                         <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>
-
+                
                 <!--Post data-->
                 <div class="card-body text-center">
                     <h2>
