@@ -18,7 +18,7 @@
                     <h2>
                         <a class="font-weight-bold"><h2><?php echo $post['title']; ?></h2></a>
                     </h2>
-                    <p>Written by
+                    <p>Автор:
                         <a>Abby Madison</a>, 26/08/2018</p>
 
                     <!--Social shares-->
@@ -87,8 +87,5 @@
         <?php echo form_open('/posts/edit/' . $post['slug']); ?>
             <button type="submit" class="btn btn-light-green lighten-2"><i class="fa fa-delete" aria-hidden="true">Edit</i></button>
         </form>
-
-        
-        
     </div>
 </div>

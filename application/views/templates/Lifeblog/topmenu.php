@@ -9,8 +9,11 @@
                               <a class="nav-link waves-effect waves-light" href="/">Главная</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link waves-effect waves-light" href="#">Услуги</a>
+                              <a class="nav-link waves-effect waves-light" href="/categories">Категории</a>
                           </li>
+                          <li class="nav-item">
+                              <a class="nav-link waves-effect waves-light" href="#">Услуги</a>
+                          </li>                          
                           <li class="nav-item">
                               <a class="nav-link waves-effect waves-light" href="#">О нас</a>
                           </li>
@@ -42,6 +45,7 @@
                               </a>
                               <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
                                   <a class="dropdown-item waves-effect waves-light" href="/posts/create">Создать новость</a>
+                                  <a class="dropdown-item waves-effect waves-light" href="/categories/create">Создать категорию</a>
                                   <a class="dropdown-item waves-effect waves-light" href="/profile">Профиль</a>
                                   <a class="dropdown-item waves-effect waves-light" href="/logout">Выход</a>
                               </div>
