@@ -1,141 +1,58 @@
-<hr class="mb-5 mt-4">
+<div class="mt-5">
+                                            <h5 class="page-title-alt"><span>Comments</span></h5>
+                                        </div>
 
+                                        <ul class="media-list list-unstyled">
 
-                <!--Main wrapper-->
-                <div class="comments-list text-center text-md-left mb-5">
-                    <div class="text-center mb-4">
-                        <h3>Comments
-                            <span class="badge blue">250</span>
-                        </h3>
-                    </div>
-                    <!--First row-->
-                    <div class="row mb-4">
-                        <!--Image column-->
-                        <div class="col-sm-2 col-12 mb-md-0 mb-3">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (27).jpg" class="avatar rounded-circle z-depth-1-half">
-                        </div>
-                        <!--/.Image column-->
-                        <!--Content column-->
-                        <div class="col-sm-10 col-12">
-                            <a>
-                                <h4 class="font-weight-bold">John Doe</h4>
-                            </a>
-                            <div class="mt-2">
-                                <ul class="list-unstyled">
-                                    <li class="comment-date">
-                                        <i class="fa fa-clock-o"></i> 05/10/2015</li>
-                                </ul>
-                            </div>
-                            <p class="grey-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident.</p>
-                        </div>
-                        <!--/.Content column-->
-                    </div>
-                    <!--/.First row-->
-                    <!--Second row-->
-                    <div class="row mb-4">
-                        <!--Image column-->
-                        <div class="col-sm-2 col-12 mb-md-0 mb-3">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg" class="avatar rounded-circle z-depth-1-half">
-                        </div>
-                        <!--/.Image column-->
-                        <!--Content column-->
-                        <div class="col-sm-10 col-12">
-                            <a>
-                                <h4 class="font-weight-bold">Marta Tev</h4>
-                            </a>
-                            <div class="mt-2">
-                                <ul class="list-unstyled">
-                                    <li class="comment-date">
-                                        <i class="fa fa-clock-o"></i> 08/10/2015</li>
-                                </ul>
-                            </div>
-                            <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                                ipsam voluptatem quia voluptas.</p>
-                        </div>
-                        <!--/.Content column-->
-                    </div>
-                    <!--/.Second row-->
-                    <!--Third row-->
-                    <div class="row mb-4">
-                        <!--Image column-->
-                        <div class="col-sm-3 col-md-2 col-12 mb-md-0 mb-3">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="avatar rounded-circle z-depth-1-half">
-                        </div>
-                        <!--/.Image column-->
-                        <!--Content column-->
-                        <div class="col-sm-9 col-md-10 col-12">
-                            <a>
-                                <h4 class="font-weight-bold">Anna Maria</h4>
-                            </a>
-                            <div class="mt-2">
-                                <ul class="list-unstyled">
-                                    <li class="comment-date">
-                                        <i class="fa fa-clock-o"></i> 17/10/2015</li>
-                                </ul>
-                            </div>
-                            <p class="grey-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-                                corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
-                                in culpa qui officia.
-                            </p>
-                        </div>
-                        <!--/.Content column-->
-                    </div>
-                    <!--/.Third row-->
-                </div>
-                <!--/.Main wrapper-->
+                                            <li class="media">
+                                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-5.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+                                                    <h4 class="media-heading"><a href="#">Michelle Durant</a></h4>
+                                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                                                </div>
+                                            </li>
 
+                                            <li class="media">
+                                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-2.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+                                                    <h4 class="media-heading"><a href="#">Ronda Otoole</a></h4>
+                                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
 
-                <!--Section: Leave a reply (Logged In User)-->
-                <section class="mb-4 mt-4">
+                                                    <div class="media">
+                                                        <img class="d-flex mr-3 rounded-circle" src="images/user/user-3.png" alt="Generic placeholder image">
+                                                        <div class="media-body">
+                                                            <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+                                                            <h4 class="media-heading"><a href="#">James Whitley</a></h4>
+                                                            <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
 
-                   <!--Leave a reply form-->
-                   <div class="reply-form">
-                     <h3 class="section-heading h3 pt-5">Leave a reply </h3>
-                     <p class="text-center">(Logged In User)</p>
+                                            <li class="media">
+                                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-4.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+                                                    <h4 class="media-heading"><a href="#">Kimberly Chretien</a></h4>
+                                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                                                </div>
+                                            </li>
 
-                     <!--Third row-->
-                     <div class="row">
-                       <!--Image column-->
-                       <div class="col-sm-2 col-12">
-                         <img src="https://mdbootstrap.com/img/Photos/Avatars/img (32).jpg" alt="Sample avatar image" class="img-fluid avatar rounded-circle z-depth-2">
-                       </div>
-                       <!--/.Image column-->
+                                            <li class="media">
+                                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-6.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+                                                    <h4 class="media-heading"><a href="#">Michelle Durant</a></h4>
+                                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                                                </div>
+                                            </li>
 
-                       <!--Content column-->
-                       <div class="col-sm-10 col-12">
-                         <!--Grid row-->
-                         <div class="row">
-
-                           <div class="col-12 mt-1">
-                             <div class="form-group basic-textarea rounded-corners shadow-textarea">
-
-                               <textarea class="form-control" id="exampleFormControlTextarea6" rows="5" placeholder="Your message..."></textarea>
-                             </div>
-
-                             <div class="text-right">
-                               <button class="btn btn-primary btn-sm">Submit</button>
-                             </div>
-
-                           </div>
-
-                         </div>
-                         <!--Grid row-->
-
-                       </div>
-
-                     </div>
-                     <!--/.Leave a reply form-->
-
-                 </section>
-                 <!--/Section: Leave a reply (Logged In User)-->
-
-
-
-
-                </section>
-                <!--Section: Blog v.4-->
-
-              </div>
+                                        </ul>
+</div>

@@ -1,91 +1,62 @@
-<!--Section: Blog v.4-->
-<section class="pt-5 mt-4 pb-3">
-
-    <!--Grid row-->
-    <div class="row">
-        <div class="col-md-12">
-            <!--Featured image-->
-            <div class="card card-cascade wider reverse">
-                <div class="view overlay">
-                    <img src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>" alt="Wide sample post image" class="img-fluid">
-                    <a>
-                        <div class="mask rgba-white-slight"></div>
-                    </a>
-                </div>
-                
-                <!--Post data-->
-                <div class="card-body text-center">
-                    <h2>
-                        <a class="font-weight-bold"><h2><?php echo $post['title']; ?></h2></a>
-                    </h2>
-                    <p>Автор:
-                        <a>Abby Madison</a>, 26/08/2018</p>
-
-                    <!--Social shares-->
-                    <div class="social-counters ">
-
-                        <!--Facebook-->
-                        <a class="btn btn-fb ">
-                            <i class="fa fa-facebook left "></i>
-                            <span class="clearfix d-none d-md-inline-block">Facebook</span>
-                        </a>
-                        <span class="counter ">46</span>
-
-                        <!--Twitter-->
-                        <a class="btn btn-tw ">
-                            <i class="fa fa-twitter left "></i>
-                            <span class="clearfix d-none d-md-inline-block">Twitter</span>
-                        </a>
-                        <span class="counter ">22</span>
-
-                        <!--Google+-->
-                        <a class="btn btn-gplus ">
-                            <i class="fa fa-google-plus left "></i>
-                            <span class="clearfix d-none d-md-inline-block">Google+</span>
-                        </a>
-                        <span class="counter ">31</span>
-
-                        <!--Comments-->
-                        <a class="btn btn-default ">
-                            <i class="fa fa-comments-o left "></i>
-                            <span class="clearfix d-none d-md-inline-block">Comments</span>
-                        </a>
-                        <span class="counter ">18</span>
-
-                    </div>
-                    <!--Social shares-->
-
-                </div>
-                <!--Post data-->
-            </div>
-
-            <!--Excerpt-->
-            <div class="excerpt mt-5">
-                <?php echo $post['body']; ?>
-            </div>
-        </div>
-    </div>
-    <!--Grid row-->
-
-    
-    <br>
 
 
+                <section class="pb-5">
+                    <div class="container">
 
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn-group mr-2" role="group" aria-label="First group">
-        <button type="button" class="btn indigo lighten-2"><i class="fa fa-star" aria-hidden="true"></i></button>
-        <button type="button" class="btn blue lighten-2"><i class="fa fa-heart" aria-hidden="true"></i></button>
-        <button type="button" class="btn light-blue lighten-2"><i class="fa fa-user" aria-hidden="true"></i></button>
-        <button type="button" class="btn cyan lighten-2"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-    </div>
+                        <div class="row pt-5">
+                            <!-- Content-->
+                            <div class="col-xl-8">
 
-    <div class="btn-group mr-2" role="group" aria-label="First group">
-        <?php echo form_open('/posts/delete/' . $post['id']); ?>
-            <button type="submit" class="btn btn-danger lighten-2"><i class="fa fa-delete" aria-hidden="true">Delete</i></button>
-        </form>
-        <?php echo form_open('/posts/edit/' . $post['slug']); ?>
-            <button type="submit" class="btn btn-light-green lighten-2"><i class="fa fa-delete" aria-hidden="true">Edit</i></button>
-        </form>
-    </div>
-</div>
+                                <!-- Post-->
+                                <article class="post">
+                                    <div class="post-header">
+                                        <h2 class="post-title"><a href="#"><h2><?php echo $post['title']; ?></h2></a></h2>
+                                        <ul class="post-meta">
+                                            <li><i class="mdi mdi-calendar"></i> July 03, 2017</li>
+                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
+                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="post-preview">
+                                        <a href="blog-single.html"><img src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>" alt="" class="img-fluid rounded"></a>
+                                    </div>
+
+                                    <div class="blog-detail-description">
+                                    <img src="<?php echo site_url(); ?>assets/Lifeblog/images/posts/<?php echo $post['post_image']; ?>" alt="" class="img-fluid rounded">
+                                    
+                                    <br>
+                                        <?php echo $post['body']; ?>
+
+                                         <div class="mt-5">
+                                            <h6>Tags:</h6>
+                                            <div class="tagcloud">
+                                                <a href="#">logo</a>
+                                                <a href="#">business</a>
+                                                <a href="#">agency</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="media post-author-box">
+                                            <img class="d-flex mr-3 rounded-circle" src="images/user/user-5.png" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Michelle Durant</a></h4>
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+
+                                                <ul class="socials list-unstyled mb-0 mt-3">
+                                                    <li><a href="http://facebook.com/"><i class="mdi mdi-facebook"></i></a></li>
+                                                    <li><a href="http://twitter.com/"><i class="mdi mdi-twitter"></i></a></li>
+                                                    <li><a href="http://instagram.com/"><i class="mdi mdi-instagram"></i></a></li>
+                                                    <li><a href="http://pinterest.com/"><i class="mdi mdi-pinterest"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                </article>
+                                <!-- Post end-->
+                            
+
+                                
+
+

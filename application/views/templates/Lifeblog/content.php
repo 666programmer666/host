@@ -1,11 +1,11 @@
 
                 <section class="mt-5 pb-5">
                     <div class="container">
-
+<?php foreach ($posts as $post) : ?>
                         <div class="row">
                             <!-- Content-->
                             <div class="col-xl-8">
-                            <?php foreach ($posts as $post) : ?>
+
                                 <!-- Post-->
                                 <article class="post">
 
@@ -19,7 +19,7 @@
                                     </div>
 
                                     <div class="post-preview">
-                                        <a href="#"><img src="<?php echo site_url(); ?>assets/Lifeblog/images/posts/<?php echo $post['post_image']; ?>" alt="" class="img-fluid rounded"></a>
+                                        <a href="#"><img src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>" alt="" class="img-fluid rounded"></a>
                                     </div>
 
                                     <div class="post-content">

@@ -16,11 +16,11 @@ class Pages extends CI_Controller
     $data['title'] = ucfirst($page);
 
     $this->load->view('templates/Lifeblog/header', $data);
-    $this->load->view('templates/Lifeblog/topmenu');
+    $this->load->view('templates/Lifeblog/left_sidebar');
+    $this->load->view('templates/LifeBlog/page_title');
     $this->load->view('pages/'.$page, $data);
-    $this->load->view('templates/LifeBlog/auth_modal');
+    $this->load->view('templates/Lifeblog/right_sidebar');
     $this->load->view('templates/Lifeblog/footer');
-    $this->load->view('templates/Lifeblog/end_footer');
   }
   
 }
