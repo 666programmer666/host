@@ -1,64 +1,44 @@
-      <h2><?php echo $title; ?></h2>
+                <section class="pb-5">
+                    <div class="container">
 
-      <?php echo validation_errors(); ?>
+                        <div class="row pt-5">
+                            <div class="col-xl-8">
+                              <h2><?php echo $title; ?></h2>
 
-      <!-- Extended material form grid -->
-      <?php echo form_open_multipart('posts/create'); ?>
-          <!-- Grid row -->
-          <div class="form-row">
-              <!-- Grid column -->
-              <div class="col-md-6">
-                  <!-- Material input -->
-                  <div class="md-form form-group">
-                      <input type="text" class="form-control" id="title" placeholder="Title News" name="title">
-                      <label for="title">Title</label>
-                  </div>
+                              <?php echo validation_errors(); ?>
+                                    <?php echo form_open_multipart('posts/create'); ?>
 
-                    <!-- Material input -->
-                    <div class="md-form form-group">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Title</label>
+                                  <input type="text" class="form-control" id="title"  placeholder="Enter title" name="title">
+                                  <small id="title" class="form-text text-muted">Введите название новости</small>
+                                </div>
 
-                        <select name="category_id" id="" class="mdb-select colorful-select dropdown-primary">
-                        <option value="" disabled selected>Choose your category</option>
-                            <?php foreach($categories as $category): ?>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Select category</label>
+                                    <select name="category_id" class="form-control">
+                                      <option value="" disabled selected>Choose your category</option>
+                                      <?php foreach($categories as $category): ?>
 
-                                <option value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
-                            <?php endforeach; ?>
+                                      <option value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
+                                      <?php endforeach; ?>
+                                    </select>
+                                  </div>
 
-                        </select>
-                    </div>
+                                <div class="form-group">
+                                  <label for="exampleFormControlFile1">Example file input</label>
+                                  <input type="file" name="userfile" class="form-control-file" >
 
-                    <div class="md-form">
-                        <div class="file-field">
-                            <div class="btn btn-primary btn-sm float-left">
-                                <span>Choose file</span>
-                                <input type="file" name="userfile">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Example textarea</label>
+                                    <textarea name="body" if="editor" class="form-control"  rows="3"></textarea>
+                                  </div>
+
+                                <button type="submit" class="btn btn-primary">Send news</button>
+
+                              </form>
+
                             </div>
-                            <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" placeholder="Upload your file">
-                            </div>
-                        </div>
-                    </div>
-
-                    </div>
-
-              <!-- Grid column -->
-          </div>
-
-            <!-- Grid row -->
-            <div class="form-row">
-                <!-- Grid column -->
-                <textarea name="body" type="text" id="editor" class="form-control md-textarea" rows="3" placeholder="Text News"></textarea>
-                <!-- Grid column -->
-            </div>
-        <!-- Grid row -->
-
-
-
-          <button type="submit" class="btn btn-primary btn-md">Send News</button>
-      </form>
-
-
-   <!-- Extended material form grid -->
-      </div>
-
-</div>
