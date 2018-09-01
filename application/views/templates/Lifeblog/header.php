@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    
+
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 
         <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/Lifeblog/images/favicon.ico">
 
-        <title>Blogezy - Responsive Blog Template</title>
+        <title><?php echo $title; ?></title>
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,700" rel="stylesheet">

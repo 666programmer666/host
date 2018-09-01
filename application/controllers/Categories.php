@@ -44,12 +44,12 @@ class Categories extends CI_Controller
         {
             $data['title'] = $this->category_model->get_categories($id)->name;
 
-            $data['posts'] = $this->post_model->get_posts_by_category($id);
+            $data['posts'] = $this->posts_model->get_posts_by_category($id);
 
             $this->load->view('templates/Lifeblog/header', $data);
             $this->load->view('templates/Lifeblog/left_sidebar');
             $this->load->view('templates/LifeBlog/page_title');
-            $this->load->view('templates/posts/index', $data);
+            $this->load->view('posts/index', $data);
             $this->load->view('templates/Lifeblog/right_sidebar');
             $this->load->view('templates/Lifeblog/footer');
 

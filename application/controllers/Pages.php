@@ -22,6 +22,6 @@ class Pages extends CI_Controller
     $this->load->view('templates/Lifeblog/right_sidebar');
     $this->load->view('templates/Lifeblog/footer');
   }
-  
+
 }
  ?>
