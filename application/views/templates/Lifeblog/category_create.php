@@ -1,19 +1,21 @@
-<h2><?=$title;?></h2>
+<section class="pb-5">
+    <div class="container">
 
-<?php echo validation_errors(); ?>
+        <div class="row pt-5">
+            <div class="col-xl-8">
+              <h2><?php echo $title; ?></h2>
 
-<?php echo form_open_multipart('categories/create'); ?>
-        <div class="form-row">
-              <!-- Grid column -->
-            <div class="col-md-6">
-                  <!-- Material input -->
-                <div class="md-form form-group">
-                    <input type="text" class="form-control" id="category" placeholder="Add category" name="category">
-                    <label for="category">Add Category</label>
+              <?php echo validation_errors(); ?>
+              <?php echo form_open_multipart('categories/create'); ?>
+                <div class="form-group">
+                  <label for="category">Add category</label>
+                  <input type="text" class="form-control" id="category"  placeholder="Add category" name="category">
+
                 </div>
-             </div>    
-        </div>  
-        <div class="text">
-            <button class="btn btn-primary btn-sm">Submit</button>
-        </div>  
-</form>        
+
+
+                <button type="submit" class="btn btn-primary">Create</button>
+
+              </form>
+
+            </div>
