@@ -8,13 +8,13 @@
               <?php echo validation_errors(); ?>
               <?php echo form_open_multipart('categories/create'); ?>
                 <div class="form-group">
-                  <label for="category">Add category</label>
-                  <input type="text" class="form-control" id="category"  placeholder="Add category" name="category">
+                  <label for="category">Введите название категории</label>
+                  <input type="text" class="form-control" id="category"  name="category">
 
                 </div>
 
 
-                <button type="submit" class="btn btn-primary">Create</button>
+                <button type="submit" class="btn btn-primary">Создать категорию</button>
 
               </form>
 

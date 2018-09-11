@@ -3,7 +3,7 @@
             <!-- Top Bar Start -->
             <div class="topbar-mobile">
                 <div class="logo">
-                    <a href="index-2.html"><img src="<?php echo base_url(); ?>assets/Lifeblog/images/logo.png" alt="" class="" style="height: 44px;"></a>
+                    <a href="<?php echo base_url();?>"><img src="<?php echo base_url(); ?>assets/Lifeblog/images/logo.png" alt="" class="" style="height: 44px;"></a>
                     <button class="button-menu-mobile">
                         <i class="mdi mdi-menu"></i>
                     </button>
@@ -16,56 +16,44 @@
                 <div class="slimscroll-menu" id="remove-scroll">
 
                     <div class="logo">
-                        <a href="index-2.html"><img src="<?php echo base_url(); ?>assets/Lifeblog/images/logo.png" alt="" class="" style="height: 44px;"></a>
-                        <p class="text-muted">Graduating from the halls of the University Of Western Sydney in late 2011. </p>
+                        <a href="<?php echo base_url();?>"><img src="<?php echo base_url(); ?>assets/Lifeblog/images/logo.png" alt="" class="" style="height: 44px;"></a>
+                        <p class="text-muted align-center">Создано с любовью и интересом к делу!</p>
                     </div>
 
                     <!--- Sidemenu -->
                     <div id="sidebar-menu">
                         <!-- Left Menu Start -->
                         <ul class="metismenu" id="side-menu">
-                            
+
                             <li>
-                                <a href="index-2.html"><span> Home</span></a>
+                                <a href="<?php echo base_url();?>"><span> Главная</span></a>
                             </li>
 
                             <li>
-                                <a href="javascript: void(0);"><span> Features </span></a>
+                                <a href="javascript: void(0);"><span> Создать новость </span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
-                                    <li><a href="standard-post.html">Standard Post</a></li>
-                                    <li><a href="video-post.html">Video Post</a></li>
-                                    <li><a href="audio-post.html">Audio Post</a></li>
-                                    <li><a href="gallery-post.html">Gallery Post</a></li>
-                                    <li><a href="quote-post.html">Quote Post</a></li>
+                                    <li><a href="standard-post.html">Стандартная статья</a></li>
+                                    <li><a href="video-post.html">Видеопост</a></li>
+                                    <li><a href="audio-post.html">Аудиопост</a></li>
+                                    <li><a href="gallery-post.html">Изображжения</a></li>
+                                    <li><a href="quote-post.html">Цитата</a></li>
                                     <li><a href="link-post.html">Link Post</a></li>
                                     <li><a href="404.html">Error 404</a></li>
                                 </ul>
                             </li>
 
                             <li>
-                                <a href="javascript: void(0);"><span> Lifestyle </span></a>
+                                <a href="/about">О нас</a>
                             </li>
 
                             <li>
-                                <a href="javascript: void(0);"><span> Travel </span></a>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);"><span> Music </span></a>
-                            </li>
-
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-
-                            <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="/contact">Контакты</a>
                             </li>
 
                         </ul>
 
                         <div class="copyright-box">
-                            <p>2017 © Blogezy. </p>
+                            <p>2018 © <a href="<?php echo base_url();?>">Lifeblogger</a> </p>
                         </div>
 
                     </div>

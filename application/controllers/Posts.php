@@ -11,7 +11,7 @@ class Posts extends CI_Controller
   {
 
 
-    $data['title'] = ucfirst('Latest Posts');
+    $data['title'] = ucfirst('Последние статьи');
 
     $data['posts'] = $this->posts_model->get_posts();
 
@@ -45,7 +45,7 @@ class Posts extends CI_Controller
 
   public function create()
   {
-    $data['title'] = 'Create Post';
+    $data['title'] = 'Создать статью';
 
     $data['categories'] = $this->posts_model->get_categories();
 
@@ -61,7 +61,7 @@ class Posts extends CI_Controller
       $this->load->view('templates/Lifeblog/right_sidebar');
       $this->load->view('templates/Lifeblog/footer');
     } else {
-      $config['upload_path'] = './assets/Lifeblog/images/posts';  
+      $config['upload_path'] = './assets/Lifeblog/images/posts';
       $config['allowed_types'] = 'gif|png|jpg';
       $config['max_size'] = '2048';
       $config['max_width'] = '5000';
@@ -101,7 +101,7 @@ class Posts extends CI_Controller
       show_404();
     }
 
-    $data['title'] = 'Edit post';
+    $data['title'] = 'Редактировать статью';
 
     $this->load->view('templates/Lifeblog/header', $data);
     $this->load->view('templates/Lifeblog/left_sidebar');

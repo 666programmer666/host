@@ -14,17 +14,17 @@
         <div class="col-md-6">
             <!-- Material input -->
             <div class="md-form form-group">
-                <input type="text" class="form-control" placeholder="Title News" name="title" value="<?php echo $post['title']; ?>">
-                <label for="title">Title</label>
+                <input type="text" class="form-control" placeholder="Заголовок новости" name="title" value="<?php echo $post['title']; ?>">
+                <label for="title">Заголовок новости</label>
             </div>
 
             <!-- Material input -->
             <div class="md-form form-group">
 
                 <select name="category_id" id="" class="mdb-select colorful-select dropdown-primary">
-                <option value="" disabled selected>Choose your category</option>
+                <option value="" disabled selected>Выберите категорию</option>
                 <?php foreach($categories as $category): ?>
-                    
+
                     <option value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
                 <?php endforeach; ?>
 
@@ -38,11 +38,11 @@
     <!-- Grid row -->
     <div class="form-row">
         <!-- Grid column -->
-        <textarea name="body" type="text" id="editor" class="form-control md-textarea" rows="3" placeholder="Text News"><?php echo $post['body']; ?></textarea>
+        <textarea name="body" type="text" id="editor" class="form-control md-textarea" rows="3" placeholder="Текст новости"><?php echo $post['body']; ?></textarea>
         <!-- Grid column -->
     </div>
   <!-- Grid row -->
-    <button type="submit" class="btn btn-primary btn-md">Update News</button>
+    <button type="submit" class="btn btn-primary btn-md">Обновить новость</button>
 </form>
 <!-- Extended material form grid -->
 </div>

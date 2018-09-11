@@ -7,9 +7,9 @@
                                 <div class="page-title">
                                     <div class="row">
                                         <div class="col-md-9 col-xs-12">
-                                            <h2><span>News and Stories</span></h2>
+                                            <h2><span>Добро пожаловать!</span></h2>
 
-                                            <p class="subtitle text-muted">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.</p>
+                                            <p class="subtitle text-muted">Привет, уважаемый читатель! Рады приветствовать тебя на нашем блоге. Надеемся, ты сможешь найти здесь что-нибудь интересное для себя. Удачного времяпрепровождения! ;) </p>
                                         </div>
                                     </div>
                                 </div>

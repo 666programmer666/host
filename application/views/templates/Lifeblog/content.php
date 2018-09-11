@@ -12,9 +12,9 @@
                                     <div class="post-header">
                                         <h2 class="post-title"><a href="#"><?php echo $post['title']; ?></a></h2>
                                         <ul class="post-meta">
-                                            <li><i class="mdi mdi-calendar"></i> <?php echo $post['created_at']; ?> in <strong><?php echo $post['name'];?></strong> 7</li>
-                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
-                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
+                                            <li><i class="mdi mdi-calendar"></i> <?php echo $post['created_at']; ?> in <strong><?php echo $post['name'];?></strong></li>
+                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#"><?php echo $post['category'];?></a>, <a href="#">Design</a></li>
+                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 комментария</a></li>
                                         </ul>
                                     </div>
 
@@ -26,7 +26,7 @@
                                         <p><?php echo word_limiter($post['prenews'], 50); ?></p>
                                     </div>
 
-                                    <div><a href="<?php echo site_url('/posts/'.$post['slug']); ?>" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
+                                    <div><a href="<?php echo site_url('/posts/'.$post['slug']); ?>" class="btn btn-outline-custom">Читать полностью <i class="mdi mdi-arrow-right"></i></a></div>
 
                                 </article>
                                 <!-- Post end-->

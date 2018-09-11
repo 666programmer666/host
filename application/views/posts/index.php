@@ -12,7 +12,7 @@
                                     <div class="post-header">
                                         <h2 class="post-title"><a href="#"><?php echo $post['title']; ?></a></h2>
                                         <ul class="post-meta">
-                                            <li><i class="mdi mdi-calendar"></i> <?php echo $post['created_at']; ?> in <strong><?php echo $post['name'];?></strong> 7</li>
+                                            <li><i class="mdi mdi-calendar"></i> <?php echo $post['created_at']; ?> in <strong><?php echo $post['name'];?></strong></li>
                                             <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
                                             <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
                                         </ul>

@@ -5,7 +5,7 @@ class Categories extends CI_Controller
 
     public function index()
     {
-        $data['title'] = 'Categories List';
+        $data['title'] = 'Список категорий';
 
         $data['categories'] = $this->category_model->get_categories();
 
@@ -13,14 +13,14 @@ class Categories extends CI_Controller
         $this->load->view('templates/Lifeblog/left_sidebar');
         $this->load->view('templates/LifeBlog/page_title');
         $this->load->view('templates/Lifeblog/categories_list', $data);
-        $this->load->view('templates/Lifeblog/right_sidebar');
+        $this->load->view('templates/Lifeblog/right_sidebar', $data);
         $this->load->view('templates/Lifeblog/footer');
 
     }
 
     public function create()
     {
-        $data['title'] = 'Create Category';
+        $data['title'] = 'Создать категорию';
 
 
         $this->form_validation->set_rules('category', 'Category', 'required');
@@ -42,7 +42,8 @@ class Categories extends CI_Controller
 
     public function posts($id)
         {
-            $data['title'] = $this->category_model->get_categories($id)->name;
+
+            $data['title'] = 'Все посты выбранной категории';
 
             $data['posts'] = $this->posts_model->get_posts_by_category($id);
 
@@ -52,9 +53,6 @@ class Categories extends CI_Controller
             $this->load->view('posts/index', $data);
             $this->load->view('templates/Lifeblog/right_sidebar');
             $this->load->view('templates/Lifeblog/footer');
-
-
-
 
         }
 
