@@ -34,11 +34,15 @@
 
                                 <div class="form-group">
                                     <label>Ваш текст в поле ниже</label>
-                                    <textarea name="body" if="editor" class="form-control"  rows="3"></textarea>
+                                    <textarea name="body" if="editor" id="editor1" class="form-control"  rows="3"></textarea>
+                                    <script>
+                                        CKEDITOR.replace( 'editor1' );
+                                    </script>
                                   </div>
 
                                 <button type="submit" class="btn btn-primary">Отправить новость</button>
 
                               </form>
+
 
                             </div>

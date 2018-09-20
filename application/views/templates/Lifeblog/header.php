@@ -27,6 +27,8 @@
         <!-- CUSTOM STYLESHEET -->
         <link href="<?php echo base_url(); ?>assets/Lifeblog/css/style.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>assets/Lifeblog/css/default.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/plugin/CKeditor/" />
+        <script src="../assets/plugin/CKeditor/ckeditor.js"></script>
 
     </head>
 
